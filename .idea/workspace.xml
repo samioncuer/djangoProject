@@ -15,6 +15,10 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
   <component name="ProjectId" id="1ZrArTgddepsLXiOWOnUFQYSyQU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -79,5 +83,13 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="559" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585598717417" />
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585673471608">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585673471608" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1585673468728">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585673468728" />
   </component>
 </project>
