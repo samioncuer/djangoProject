@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04ad90e2-ddd2-45f6-b8dc-4fadaea80629" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/homebase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/place/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="samioncuer &lt;sami.oncuer1@hotmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
@@ -94,7 +88,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585673488484</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="güncelleme">
+      <created>1586055177030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586055177030</updated>
+    </task>
+    <task id="LOCAL-00003" summary="güncelleme">
+      <created>1586055320713</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586055320713</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,20 +113,24 @@
     <option name="LAST_COMMIT_MESSAGE" value="güncelleme" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="392" y="88" key="#Deployment" timestamp="1586055308692">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="88" key="#Deployment/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055308692" />
     <state x="559" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585598717417">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="559" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585598717417" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1586055176104">
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1586055319866">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585673487921" />
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055176104" />
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586055280071">
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055319866" />
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586055347376">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585673471608" />
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055280071" />
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055347376" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1585673468728">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
