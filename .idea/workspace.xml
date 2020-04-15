@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04ad90e2-ddd2-45f6-b8dc-4fadaea80629" name="Default Changelist" comment="">
+    <list default="true" id="04ad90e2-ddd2-45f6-b8dc-4fadaea80629" name="Default Changelist" comment="place detail güncelleme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +26,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/samioncuer/djangoProject.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1ZrArTgddepsLXiOWOnUFQYSyQU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -88,6 +95,7 @@
       <workItem from="1586503343564" duration="9705000" />
       <workItem from="1586591810505" duration="17356000" />
       <workItem from="1586860063720" duration="17997000" />
+      <workItem from="1586956917077" duration="1710000" />
     </task>
     <task id="LOCAL-00001" summary="güncelleme">
       <created>1585673488484</created>
@@ -124,11 +132,36 @@
       <option name="project" value="LOCAL" />
       <updated>1586955340428</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="place detail güncelleme">
+      <created>1586956972477</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586956972477</updated>
+    </task>
+    <task id="LOCAL-00007" summary="place detail güncelleme">
+      <created>1586957001681</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586957001681</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="güncelleme" />
@@ -156,16 +189,20 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586140986314" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1586956971000">
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1586960343841">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585673487921" />
     <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055726340" />
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586956971000" />
-    <state x="152" y="67" key="DiffContextDialog" timestamp="1586956960327">
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586960343841" />
+    <state x="152" y="67" key="DiffContextDialog" timestamp="1586960071570">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="152" y="67" key="DiffContextDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586956960327" />
+    <state x="152" y="67" key="DiffContextDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586960071570" />
+    <state x="657" y="140" key="RollbackChangesDialog" timestamp="1586960072880">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="657" y="140" key="RollbackChangesDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586960072880" />
     <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1586956918884">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
