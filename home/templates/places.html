@@ -1,0 +1,93 @@
+{% extends "homebase.html" %}
+
+{% block title %} Places-{{ categorydata.title }} Places {% endblock %}
+{% block keywords %} {{ categorydata.keywords }} {% endblock %}
+{% block description %} {{ categorydata.description }} {% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'>
+{% endblock %}
+
+
+{% block content %}
+    <!-- === BEGIN CONTENT === -->
+    <div id="content">
+        <div class="container background-white">
+            <div class="row margin-vert-30">
+                <div class="col-md-12 margin-top-30">
+
+
+
+                    <!-- === BEGIN CONTENT === -->
+                    <div id="content">
+                        <div class="container background-white">
+                            <div class="row margin-vert-30">
+                                <div class="col-md-12">
+                                    <h2>{{ categorydata.title }}</h2>
+                                    <!-- Filter Buttons -->
+                                    <div class="portfolio-filter-container margin-top-20">
+                                        <ul class="portfolio-filter">
+                                            <li class="portfolio-filter-label label label-primary">
+                                                filter by:
+                                            </li>
+                                            <li>
+                                                <a href="#" class="portfolio-selected btn btn-default" data-filter="*">All</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="btn btn-default" data-filter=".code">Coding</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="btn btn-default" data-filter=".design">Design</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="btn btn-default" data-filter=".audio">Audio</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="btn btn-default" data-filter=".video">Video</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- End Filter Buttons -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 portfolio-group no-padding">
+
+
+                                    {% for rs in places %}
+                                    <!-- Portfolio Item -->
+                                    <div class="col-md-4 portfolio-item margin-bottom-40 video">
+                                        <div>
+                                            <a href="/place/{{ rs.id }}/{{ rs.slug }}">
+                                                <figure>
+                                                    <img src="{{ rs.image.url }}" alt="image1">
+                                                    <figcaption>
+                                                        <h3 class="margin-top-20">{{ rs.price }}</h3>
+                                                        <span>{{ rs.title }}</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Portfolio Item -->
+                                    {% endfor %} }}
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- === END CONTENT === -->
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- === END CONTENT === -->
+{% endblock %}
+
+

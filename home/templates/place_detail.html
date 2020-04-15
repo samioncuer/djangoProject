@@ -1,0 +1,135 @@
+{% extends "homebase.html" %}
+
+{% block title %}{{ place.title }} {% endblock %}
+{% block keywords %} {{ place.keywords }} {% endblock %}
+{% block description %} {{ place.description }} {% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'>
+{% endblock %}
+
+
+{% block content %}
+    <!-- === BEGIN CONTENT === -->
+    <div id="content">
+        <div class="container background-white">
+            <div class="row margin-vert-30">
+                <div class="col-md-12 margin-top-30">
+
+                    <!-- === BEGIN CONTENT === -->
+                    <div id="content">
+                        <div class="container background-white">
+                            <div class="row margin-vert-40">
+
+                                <div class="col-md-9">
+                                    <h2>{{ place.title }}</h2>
+
+
+
+                                    <!-- Carousel - Example 1 -->
+                                    <div id="carousel-example-1" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            {% for rs in sliderdata %}
+                                                <li data-target="#carousel-example" data-slide-to="{{ forloop.counter }}" {% if forloop.counter == 1 %} class="active" {% endif %}></li>
+                                            {% endfor %}
+
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+
+                                            <div class="item active">
+                                                <img src="{{ place.image.url }}">
+                                            </div>
+                                            {% for rs in images %}
+                                                <div class="item">
+                                                    <img src="{{ rs.image.url }}">
+                                                </div>
+                                            {% endfor %}
+
+                                        </div>
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-1" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-1" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+
+
+                                    <hr>
+
+
+                                    <!-- End Carousel - Example 1  -->
+                                    <!-- Tab v1 -->
+                                    <div class="tabs">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active">
+                                                <a href="#sample-1a" data-toggle="tab">Açıklama</a>
+                                            </li>
+                                            <li>
+                                                <a href="#sample-1b" data-toggle="tab">Adres</a>
+                                            </li>
+                                            <li>
+                                                <a href="#sample-1c" data-toggle="tab">Fiyat</a>
+                                            </li>
+                                            <li>
+                                                <a href="#sample-1d" data-toggle="tab">Beğeni & Yorum</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade in active" id="sample-1a">
+                                                <div class="row">
+
+                                                    <div class="col-md-7">
+                                                        <h3 class="no-margin no-padding">{{ place.title }}</h3>
+                                                        <p>{{ place.detail | safe }}</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade in" id="sample-1b">
+                                                <p>{{ place.address }}</p>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="tab-pane fade in" id="sample-1c">
+                                                <div class="row">
+
+                                                    <div class="col-md-7">
+                                                        <h3 class="no-margin no-padding">{{ place.price }}</h3>
+
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="tab-pane fade in" id="sample-1d">
+                                                <p>xxxxxxxxxxxxxxxxxxxx</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Tab v1 -->
+
+                                    <hr>
+
+                                    <!-- End Carousel - Example 2  -->
+                                    <div class="clearfix"></div>
+                                    <pre class="margin-top-10">
+                                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                    </pre>
+                                    <hr class="margin-top-30">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- === END CONTENT === -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- === END CONTENT === -->
+{% endblock %}
+
+

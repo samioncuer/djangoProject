@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04ad90e2-ddd2-45f6-b8dc-4fadaea80629" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/hakkimizda.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/place_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/places.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/referanslar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/place/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +38,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Sami Öncüer" />
         <option value="samioncuer &lt;sami.oncuer1@hotmail.com&gt;" />
       </list>
     </option>
@@ -37,10 +56,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/place" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\project2\home\templates" />
       <recent name="C:\Django\project2\place" />
     </key>
   </component>
@@ -80,6 +100,12 @@
       <option name="presentableId" value="Default" />
       <updated>1585587037492</updated>
       <workItem from="1585587040836" duration="11533000" />
+      <workItem from="1586209459111" duration="1316000" />
+      <workItem from="1586280175307" duration="2102000" />
+      <workItem from="1586373830752" duration="200000" />
+      <workItem from="1586503343564" duration="9705000" />
+      <workItem from="1586591810505" duration="17356000" />
+      <workItem from="1586860063720" duration="17903000" />
     </task>
     <task id="LOCAL-00001" summary="güncelleme">
       <created>1585673488484</created>
@@ -102,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586055320713</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="güncelleme">
+      <created>1586055727048</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586055727048</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,20 +150,39 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Deployment/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055308692" />
+    <state x="392" y="88" key="#Inspections" timestamp="1586137486963">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="88" key="#Inspections/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586137486963" />
+    <state x="321" y="83" key="#Intentions" timestamp="1586143118737">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="321" y="83" key="#Intentions/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586143118737" />
     <state x="559" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585598717417">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="559" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585598717417" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1586055319866">
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586140986314">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586140986314" />
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1586955308272">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585673487921" />
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055319866" />
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586055347376">
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055726340" />
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586955308272" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1586860078678">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586860078678" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1586374027748" />
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586955275137">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585673471608" />
     <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055347376" />
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586955275137" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1585673468728">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
