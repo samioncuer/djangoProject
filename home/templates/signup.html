@@ -1,0 +1,70 @@
+{% extends "homebase.html" %}
+
+{% block title %} Sign up-{{ setting.company }} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'>
+{% endblock %}
+
+
+{% block content %}
+    <!-- === BEGIN CONTENT === -->
+    <div id="content">
+        <div class="container background-white">
+            <div class="row margin-vert-30">
+                <div class="col-md-12 margin-top-30">
+                    <!-- === BEGIN CONTENT === -->
+                    <div id="content">
+                        <div class="container background-white">
+                            <div class="container">
+                                <div class="row margin-vert-30">
+                                    <!-- Login Box -->
+                                    <div class="col-md-6 col-md-offset-3 col-sm-offset-3">
+                                        {% if messages %}
+                                            {% for message in messages %}
+                                                <div class="alert alert-{{ message.tags }}" role="alert">
+                                                    {{ message }}
+                                                </div>
+                                            {% endfor %}
+                                        {% endif %}
+
+                                        <form method="post">
+                                            {% csrf_token %}
+                                            <div class="login-header margin-bottom-30">
+                                                <h2>Login to your account</h2>
+                                            </div>
+                                            {% for field in form %}
+                                                <p>
+                                                    {{ field.label_tag }}<br>
+                                                    {{ field }}
+                                                    {% if field.help_text %}
+                                                        <small style="color: grey">{{ field.help_text }}</small>
+                                                    {% endif %}
+                                                    {% for error in field.errors %}
+                                                        <p style="color: red">{{ error }}</p>
+                                                    {% endfor %}
+                                                </p>
+                                            {% endfor %}
+                                            <button type="submit">Login</button>
+                                    </form>
+
+
+
+
+                            </div>
+                            <!-- End Login Box -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- === END CONTENT === -->
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- === END CONTENT === -->
+{% endblock %}
+

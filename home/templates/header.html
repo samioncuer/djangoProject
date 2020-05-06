@@ -1,79 +1,128 @@
 {% load static %}
 
-<div id="body-bg">
-    <!-- Phone/Email -->
-    <div id="pre-header" class="background-gray-lighter">
-        <div class="container no-padding">
-            <div class="row hidden-xs">
-                <div class="col-sm-6 padding-vert-5">
-                    <strong>Phone:</strong>&nbsp;1-800-123-4567
-                </div>
-                <div class="col-sm-6 text-right padding-vert-5">
-                    <strong>Email:</strong>&nbsp;info@joomla51.com
-                </div>
+<!-- Phone/Email -->
+<div id="pre-header" class="background-gray-lighter">
+    <div class="container no-padding">
+        <div class="row hidden-xs">
+            <div class="col-sm-6 padding-vert-5">
+                <strong>Phone:</strong>&nbsp;1-800-123-4567
             </div>
-        </div>
-    </div>
-    <!-- End Phone/Email -->
-    <!-- Header -->
-    <div id="header">
-        <div class="container">
-            <div class="row">
-                <!-- Logo -->
-                <div class="logo">
-                    <a href="index.html" title="">
-                        <img src="{% static 'img/logo.png' %}" alt="Logo" />
-                    </a>
-                </div>
-                <!-- End Logo -->
-            </div>
-        </div>
-    </div>
-    <!-- End Header -->
-    <!-- Top Menu -->
-    <div id="hornav" class="bottom-border-shadow">
-        <div class="container no-padding border-bottom">
-            <div class="row">
-                <div class="col-md-8 no-padding">
-                    <div class="visible-lg">
-                        <ul id="hornavmenu" class="nav navbar-nav">
-                            <li>
-                                <a href="/" class="fa-home active">Home</a>
-                            </li>
-                            <li>
-                                <span class="fa-th">Categories</span>
-                                <ul>
-                                    {% load mptt_tags %}
-                                    {% recursetree category %}
-                                        <li>
-                                            <a href="/category/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a>
-                                            {% if not node.is_leaf_node %}
-                                                <ul>
-                                                    <li>
-                                                        <a href="/category/{{ node.id }}/{{ node.slug }}">{{ children }}</a>
-                                                    </li>
-                                                </ul>
-                                            {% endif %}
-                                        </li>
-                                    {% endrecursetree %}
-                                </ul>
-                            </li>
 
-                            <li>
-                                <a href="/referanslar" class="fa-comment ">References</a>
-                            </li>
-                            <li>
-                                <a href="/hakkimizda" class="fa-comment ">About Us</a>
-                            </li>
-                            <li>
-                                <a href="/contact" class="fa-comment ">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="col-sm-6 text-right padding-vert-5">
+                {% if user.id is not None %}
+                    <h5><a href="/user"><i class="fa fa-unlock-alt">{{ user.first_name }} </i></a><img src="/home/static/img/profiles/37.jpg"></h5>
+
+                    <h5><a href="/logout/"><i class="fa fa-unlock-alt"> Logout </i></a></h5>
+                {% else %}
+                    <h5><a href="/login/"><i class="fa fa-unlock-alt"> Login </i></a></h5>
+                    <h5> <a href="/signup/"><i class="fa fa-user-plus">Sign up</i> </a></h5>
+                {% endif %}
 
             </div>
         </div>
     </div>
-    <!-- End Top Menu -->
-    <!-- === END HEADER === -->
+</div>
+<!-- End Phone/Email -->
+<script>
+
+    $(function() {
+        $("#query").autocomplete({
+            source: "/search_auto/",
+            select: function (event, ui) { //item selected
+                AutoCompleteSelectHandler(event, ui)
+            },
+            minLength: 2,
+        });
+    });
+
+    function AutoCompleteSelectHandler(event, ui)
+    {
+        var selectedObj = ui.item;
+    }
+
+</script>
+<!-- Header -->
+<div id="header">
+    <div class="container">
+        <div class="row">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html" title="">
+                    <img src="{% static 'img/logo.png' %}" alt="Logo" />
+                </a>
+            </div>
+            <!-- End Logo -->
+        </div>
+    </div>
+</div>
+<!-- End Header -->
+<!-- Top Menu -->
+<div id="hornav" class="bottom-border-shadow">
+    <div class="container no-padding border-bottom">
+        <div class="row">
+            <div class="col-md-8 no-padding">
+                <div class="visible-lg">
+                    <ul id="hornavmenu" class="nav navbar-nav">
+                        <li>
+                            <a href="/" class="fa-home active">Home</a>
+                        </li>
+                        <li>
+                            <span class="fa-th">Categories</span>
+                            <ul>
+                                {% load mptt_tags %}
+                                {% recursetree category %}
+                                    <li>
+                                        <a href="/category/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a>
+                                        {% if not node.is_leaf_node %}
+                                            <ul>
+                                                <li>
+                                                    <a href="/category/{{ node.id }}/{{ node.slug }}">{{ children }}</a>
+                                                </li>
+                                            </ul>
+                                        {% endif %}
+                                    </li>
+                                {% endrecursetree %}
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="/referanslar" class="fa-comment ">References</a>
+                        </li>
+                        <li>
+                            <a href="/hakkimizda" class="fa-comment ">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/contact" class="fa-comment ">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2" style="position: absolute; right: 20em;}">
+                <form action="/search/" method="post">
+                    {% csrf_token %}
+                    <input id="query" name="query" class="form-control" type="text" placeholder="Enter your keyword">
+                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                    {% load mptt_tags %}
+            <select name="catid" class="input fa-search">
+                <option value="0">All Categories</option>
+                {% recursetree category %}
+                    {% if node.is_leaf_node %} <option value="{{ node.id }}">{{ node.title }}</option>
+                    {% endif %}
+                    {% if not node.is_leaf_node %}
+                        <optgroup label="{{ node.title }}">
+                            {{ children }}
+                        </optgroup>
+                    {% endif %}
+                {% endrecursetree %}
+            </select>
+
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<!-- End Top Menu -->
+<!-- === END HEADER === -->

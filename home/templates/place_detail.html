@@ -75,7 +75,7 @@
                                                 <a href="#sample-1c" data-toggle="tab">Fiyat</a>
                                             </li>
                                             <li>
-                                                <a href="#sample-1d" data-toggle="tab">Beğeni & Yorum</a>
+                                                <a href="#sample-1d" data-toggle="tab">Beğeni</a>
                                             </li>
                                         </ul>
                                         <div class="tab-content">
@@ -115,9 +115,149 @@
 
                                     <!-- End Carousel - Example 2  -->
                                     <div class="clearfix"></div>
-                                    <pre class="margin-top-10">
-                                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                                    </pre>
+
+
+                                    <!-- Comments -->
+                                    <div class="blog-recent-comments panel panel-default margin-bottom-30">
+                                        <div class="panel-heading">
+                                            <h3>Comments</h3>
+                                        </div>
+                                        <ul class="list-group">
+
+                                        {% for rs in comments %}
+                                            <li class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-md-2 profile-thumb">
+                                                        <a href="#">
+                                                           <b>{{ rs.user.first_name }}</b>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        <h4>{{ rs.subject}}</h4>
+                                                        <p>{{ rs.comment }}</p>
+                                                        <div class="review-rating pull-right">
+                                                            <i class="fa fa-star{% if rs.rate < 1 %}-o empty{% endif %}"></i>
+                                                            <i class="fa fa-star{% if rs.rate < 2 %}-o empty{% endif %}"></i>
+                                                            <i class="fa fa-star{% if rs.rate < 3 %}-o empty{% endif %}"></i>
+                                                            <i class="fa fa-star{% if rs.rate < 4 %}-o empty{% endif %}"></i>
+                                                            <i class="fa fa-star{% if rs.rate < 5 %}-o empty{% endif %}"></i>
+                                                        </div>
+                                                        <span class="date">
+                                                                <i class="fa fa-clock-o color-gray-light"></i>{{ rs.create_at }}</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+
+
+                                            <li class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-md-2 profile-thumb">
+                                                        <a href="#">
+                                                            <img class="media-object" src="assets/img/profiles/53.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        <h4>A quick question</h4>
+                                                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                                        <p>Donec id erum quidem rerumd facilis est et expedita distinctio lorem ipsum dolorlit non mi portas sats eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                                                            fermentum massa justo sit amet risus. Etiam porta sem malesuada magna.</p>
+                                                        <span class="date">
+                                                                <i class="fa fa-clock-o color-gray-light"></i>12 May 2013</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-md-2 profile-thumb">
+                                                        <a href="#">
+                                                            <img class="media-object" src="assets/img/profiles/37.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        <h4>Thank you!</h4>
+                                                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                                        <span class="date">
+                                                                <i class="fa fa-clock-o color-gray-light"></i>10 May 2013</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- Comment Form -->
+                                            <li class="list-group-item">
+                                                <div class="blog-comment-form">
+                                                    <div class="row margin-top-20">
+                                                        <div class="col-md-12">
+                                                            <div class="pull-left">
+                                                                <h3>Leave a Comment</h3>
+                                                                {% if messages %}
+                                                                    {% for message in messages %}
+                                                                        <div class="alert alert-{{ message.tags }}" role="alert">
+                                                                            {{ message }}
+                                                                        </div>
+                                                                    {% endfor %}
+                                                                {% endif %}
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row margin-top-20">
+                                                        <div class="col-md-12">
+                                                            <form action="/place/addcomment/{{ place.id }}">
+                                                                {% csrf_token %}
+                                                                <label>Name</label>
+                                                                <div class="row margin-bottom-20">
+                                                                    <div class="col-md-7 col-md-offset-0">
+                                                                        <input class="form-control" type="text" name="subject" id="id_subject" placeholder="Subject" />
+                                                                    </div>
+                                                                </div>
+                                                                <!--      e-mail kısmı
+                                                                <label>Email
+                                                                    <span>*</span>
+                                                                </label>
+                                                                <div class="row margin-bottom-20">
+                                                                    <div class="col-md-7 col-md-offset-0">
+                                                                        <input class="form-control" type="text">
+                                                                    </div>
+                                                                </div> -->
+
+                                                                <label>Message</label>
+                                                                <div class="row margin-bottom-20">
+                                                                    <div class="col-md-11 col-md-offset-0">
+                                                                        <textarea class="form-control" name="comment" id="id_comment" placeholder="Your review" rows="8"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="input-rating">
+                                                                        <strong class="text-uppercase"> Your Rating: </strong>
+                                                                        <div class="stars">
+                                                                            <input type="radio" id="star5" name="rate" value="5" /> <label for="star5"></label>
+                                                                            <input type="radio" id="star4" name="rate" value="4" /> <label for="star4"></label>
+                                                                            <input type="radio" id="star3" name="rate" value="3" /> <label for="star3"></label>
+                                                                            <input type="radio" id="star2" name="rate" value="2" /> <label for="star2"></label>
+                                                                            <input type="radio" id="star1" name="rate" value="1" /> <label for="star1"></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <p>
+                                                                    {% if user.id is not None %}
+                                                                        <button class="btn btn-primary" type="submit">Send Message</button>
+                                                                    {% else %}
+                                                                        Yorum eklemek için <a href="/login">giriş</a>  yapmalsınız!
+                                                                    {% endif %}
+                                                                </p>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- End Comment Form -->
+                                        </ul>
+                                    </div>
+                                    <!-- End Comments -->
+
+
+
                                     <hr class="margin-top-30">
                                 </div>
                             </div>

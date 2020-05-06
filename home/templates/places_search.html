@@ -1,0 +1,42 @@
+{% extends 'homebase.html' %}
+
+{% block title %} Places Search Results {% endblock %}
+{% block keywords %} {{ categorydata.keywords }} {% endblock %}
+{% block description %} {{  categorydata.description }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
+{% endblock %}
+
+{% block content %}
+
+ <!-- === BEGIN CONTENT === -->
+            <div id="content">
+                <div class="container background-white">
+                    <div class="row margin-vert-30">
+                        <div class="col-md-12 margin-top-30">
+
+
+                            <table cellpadding="3" width="1200">
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Place Name</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                </tr>
+                                {% for rs in places %}
+                                <tr>
+                                    <td> <a href="/place/{{ rs.id }}/{{ rs.slug }}"><img src="{{ rs.image.url }}" style="width: 40px; height: 40px" alt=""></a> </td>
+                                    <td> <h4><a href="/place/{{ rs.id }}/{{ rs.slug }}">{{ rs.title }}</a> </h4> </td>
+                                    <td> <h4>{{ rs.category }}</h4></td>
+                                    <td> <h4>${{ rs.price }}</h4></td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+
+                                  </div>
+                    </div>
+                </div>
+            </div>
+            <!-- === END CONTENT === -->
+{% endblock %}

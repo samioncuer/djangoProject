@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-{% load static %}
-        <!-- Title -->
+    {% load static %}
+    <!-- Title -->
 
-        <!-- Meta -->
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Meta -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-        <title>{% block title %} Anasayfa {% endblock %}</title>
-        <meta name="keywords" content="{% block keywords %} Anasayfa anahtar kelimeler {% endblock %}">
-        <meta name="description" content="{% block description %} Anasayfa açıklama {% endblock %}">
+    <title>{% block title %} Anasayfa {% endblock %}</title>
+    <meta name="keywords" content="{% block keywords %} Anasayfa anahtar kelimeler {% endblock %}">
+    <meta name="description" content="{% block description %} Anasayfa açıklama {% endblock %}">
 
-        <!-- Favicon -->
-        <link href="favicon.ico" rel="shortcut icon">
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="shortcut icon">
 
-        <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="{% static  'css/bootstrap.css'%}" />
-        <!-- Template CSS -->
-        <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/nexus.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/custom.css'%}" />
-        <!-- Google Fonts-->
-        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{% static  'css/bootstrap.css'%}" />
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/nexus.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/custom.css'%}" />
+    <!-- Google Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+    <!-- jQuery !-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
+    <!-- jQuery UI !-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <div id="body-bg"> </div>
 
-         {% block head %}  {% endblock %}
+        {% block head %}  {% endblock %}
 
-</head>
+        </head>
 <body>
-         {% include 'header.html' %}
-         {% block slider %} {% endblock %}
-         {% block content %}  {% endblock %}
-         {% include 'footer.html' %}
-         {% block foot %} {% endblock %}
+{% include 'header.html' %}
+{% block slider %} {% endblock %}
+{% block content %}  {% endblock %}
+{% include 'footer.html' %}
+{% block foot %} {% endblock %}
 
 
 </body>

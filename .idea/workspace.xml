@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04ad90e2-ddd2-45f6-b8dc-4fadaea80629" name="Default Changelist" comment="place detail güncelleme">
+    <list default="true" id="04ad90e2-ddd2-45f6-b8dc-4fadaea80629" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/homebase.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/homebase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/place_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/place_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/place/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/place/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/place/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/place/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/images/ayasofya_2s4Wsp7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/images/ayasofya_2s4Wsp7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/images/safranbolu_lQMECjZ.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/images/safranbolu_lQMECjZ.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/images/topkapi_kRWp9TB.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/images/topkapi_kRWp9TB.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/images/yerebatan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/images/yerebatan.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,12 +39,12 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="samioncuer &lt;sami.oncuer1@hotmail.com&gt;" />
         <option value="Sami Öncüer" />
+        <option value="samioncuer &lt;sami.oncuer1@hotmail.com&gt;" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -42,6 +61,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -95,7 +115,15 @@
       <workItem from="1586503343564" duration="9705000" />
       <workItem from="1586591810505" duration="17356000" />
       <workItem from="1586860063720" duration="17997000" />
-      <workItem from="1586956917077" duration="1710000" />
+      <workItem from="1586956917077" duration="3477000" />
+      <workItem from="1587050632647" duration="13170000" />
+      <workItem from="1587479036324" duration="614000" />
+      <workItem from="1587487377316" duration="1927000" />
+      <workItem from="1587929731933" duration="6000" />
+      <workItem from="1588011804344" duration="28000" />
+      <workItem from="1588196958666" duration="1063000" />
+      <workItem from="1588362742300" duration="617000" />
+      <workItem from="1588639039049" duration="48946000" />
     </task>
     <task id="LOCAL-00001" summary="güncelleme">
       <created>1585673488484</created>
@@ -146,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586957001681</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="place detail güncelleme">
+      <created>1586960412511</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586960412511</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +192,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -166,13 +203,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="güncelleme" />
     <MESSAGE value="place detail güncelleme" />
-    <option name="LAST_COMMIT_MESSAGE" value="place detail güncelleme" />
+    <MESSAGE value="search güncelleme" />
+    <MESSAGE value="user panel güncellemesi" />
+    <option name="LAST_COMMIT_MESSAGE" value="user panel güncellemesi" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="392" y="88" key="#Deployment" timestamp="1586055308692">
+    <state x="392" y="88" key="#Deployment" timestamp="1588803867458">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Deployment/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055308692" />
+    <state x="392" y="88" key="#Deployment/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1588803867458" />
     <state x="392" y="88" key="#Inspections" timestamp="1586137486963">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -181,39 +221,40 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="321" y="83" key="#Intentions/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586143118737" />
-    <state x="559" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585598717417">
+    <state x="559" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588796694483">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="559" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585598717417" />
+    <state x="559" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1588796694483" />
     <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586140986314">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586140986314" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1586960343841">
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1588803927885">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585673487921" />
     <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055726340" />
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586960343841" />
-    <state x="152" y="67" key="DiffContextDialog" timestamp="1586960071570">
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1588803927885" />
+    <state x="152" y="67" key="DiffContextDialog" timestamp="1586962071533">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="152" y="67" key="DiffContextDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586960071570" />
-    <state x="657" y="140" key="RollbackChangesDialog" timestamp="1586960072880">
+    <state x="152" y="67" key="DiffContextDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586962071533" />
+    <state x="657" y="140" key="RollbackChangesDialog" timestamp="1586962098018">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="657" y="140" key="RollbackChangesDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586960072880" />
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1586956918884">
+    <state x="657" y="140" key="RollbackChangesDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586962098018" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1588684261188">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586956918884" />
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1586374027748" />
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586956982976">
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1588362741705" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1588684261188" />
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588803843782">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/-1440.0.1440.860@0.0.1600.860" timestamp="1585673471608" />
     <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/1600.-74.1440.860@0.0.1600.860" timestamp="1586055347376" />
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1586956982976" />
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/1600.0.1440.860@0.0.1600.860" timestamp="1588803843782" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1585673468728">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

@@ -1,0 +1,12 @@
+.search-btn{
+    display: flex;
+    position: absolute;
+    top: -20px;
+    float: right;
+    right: -38px;
+    margin: 25px;
+    width: 30px;
+    justify-content: center;
+    height: 30px;
+    text-align: center;
+}

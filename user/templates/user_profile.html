@@ -1,0 +1,67 @@
+{% extends "homebase.html" %}
+
+{% block title %} User-{{ setting.company }} {% endblock %}
+{% block keywords %} {{ setting.keywords }} {% endblock %}
+{% block description %} {{ setting.description }} {% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'>
+{% endblock %}
+
+
+{% block content %}
+    <!-- === BEGIN CONTENT === -->
+    <div id="content">
+        <div class="container background-white">
+            <div class="row margin-vert-40">
+                <!-- Begin Sidebar Menu -->
+                <div class="col-md-3">
+                    <h3><strong>USER PANEL</strong></h3>
+                    <hr>
+                    {% include "user_panel.html" %}
+                </div>
+                <!-- End Sidebar Menu -->
+                <div class="col-md-9">
+                    <h3><strong>USER INFORMATION</strong></h3>
+                    <hr>
+
+                    <table class="table">
+                        <tr>
+                            <th class="text-center"></th>
+                            <td class="profile-thumb"><img src="{{ profile.image.url }}"></td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Name Surname</th>
+                            <td class="profile-thumb"> {{ profile.user_name }} </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Email</th>
+                            <td class="profile-thumb"> {{ profile.user.email }} </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Phone</th>
+                            <td class="profile-thumb"> {{ profile.phone }} </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Address</th>
+                            <td class="profile-thumb"> {{ profile.address }} </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">City</th>
+                            <td class="profile-thumb"> {{ profile.city }} </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Country</th>
+                            <td class="profile-thumb"> {{ profile.country }} </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <hr class="short">
+            </div>
+        </div>
+    </div>
+    <!-- === END CONTENT === -->
+{% endblock %}
+
+
